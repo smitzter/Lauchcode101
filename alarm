@@ -1,0 +1,5 @@
+current = int(input("What hour is it in Military time?"))
+hours_added = int(input("How many hours forward do you wish to set the alarm?"))
+alarmhr = int(current + hours_added) 
+finalhr = int(alarmhr % 24)
+print("Your alarm will go off at", '%02d:%02d' %(int(finalhr), int("00")))
