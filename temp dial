@@ -1,0 +1,13 @@
+clicks = int(input("By how many clicks has the dial been turned?"))
+temp = clicks + 40 
+#print (temp)
+if clicks <= 0:
+    temp = clicks + 90
+elif clicks >= 50:
+    temp = clicks + 40 - 50
+temp_str = str(temp)
+#print (temp_str)
+
+print ("The temperature is " + temp_str)
+
+# TODO calculate the temperature, and report it back to the user
