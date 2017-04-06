@@ -1,0 +1,15 @@
+#160, -43, 270, -97, -43, 200, -940, 17, -86
+import turtle
+wn = turtle.Screen()
+wn.bgcolor("black")
+tut = turtle.Turtle()
+tut.color("red")
+tut.shape("turtle")
+
+for size in [160, -43, 270, -97, -43, 200, -940, 17, -86]:    
+    tut.stamp()                
+    tut.up() 
+    tut.forward(size)       
+    tut.right(24)
+    
+wn.exitonclick()
