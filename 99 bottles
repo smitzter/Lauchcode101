@@ -1,0 +1,5 @@
+for i_int in range(99,1,-1):
+    i_str = str(i_int)
+    print (i_str + " Bottles of Beer on the Wall")
+    print (i_str + " Bottles of Beer")
+    print ("Take one down pass it around " + i_str + " Bottles of Beer on the Wall")
