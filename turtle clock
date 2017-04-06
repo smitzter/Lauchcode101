@@ -1,0 +1,15 @@
+import turtle
+wn = turtle.Screen()
+wn.bgcolor("black")
+
+tut = turtle.Turtle()
+tut.color("red")
+tut.shape("turtle")
+tut.stamp()
+
+for i in range(12):
+    tut.up()  
+    tut.left(360/12)    
+    tut.forward(110)
+    tut.stamp()         
+    tut.forward(-110)  
