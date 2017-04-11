@@ -1,0 +1,20 @@
+import turtle
+
+def draw_line(length, angle):
+    superstar = turtle.Turtle()
+    superstar.speed(100)
+    superstar.left(angle)
+    superstar.forward(length)
+    superstar.left(90)
+    superstar.forward(length)
+    superstar.left(90)
+    superstar.forward(length)
+    superstar.left(90)    
+    superstar.forward(length)
+    superstar.left(90)
+    
+def megastar(nlines):
+    for angle in range(0, 360, int(360/nlines)):
+        draw_line(75, angle)
+
+megastar(40)
