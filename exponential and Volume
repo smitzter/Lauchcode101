@@ -1,0 +1,14 @@
+def expo(x,n):
+    runningtotal = 1
+    for i in range(int(n)):
+        runningtotal = runningtotal * x
+
+    return runningtotal
+
+print(expo(10,3))
+
+def sphereVol(r):
+    sphere = 4/3 * 3.14 * r**3
+    return sphere
+
+print(sphereVol(10))
