@@ -1,0 +1,15 @@
+def in_btwn(x, start, stop)
+  return x > start and x <end
+  
+  describe what is a boolean
+  describe what are logical operaters
+  write an if statement
+  write a (nested) if statement with an elif clause
+  reduce a boolean function to a boolean expression
+  write a for loop
+  explain what is an infinite loop
+  explain how color is modeled on a computer
+  write a program that processes an image
+  
+  
+  https://static.vecteezy.com/system/resources/previews/000/092/503/non_2x/free-vector-rgb-color-venn-diagram.jpg
