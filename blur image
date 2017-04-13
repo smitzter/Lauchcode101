@@ -1,0 +1,20 @@
+import image
+import sys
+import random
+
+
+img = image.Image("luther.jpg")
+newimg = image.EmptyImage(img.getWidth(), img.getHeight())
+win = image.ImageWin(img.getWidth(), img.getHeight())
+
+for i in range(1, img.getWidth() - 1):
+    for j in range(1, img.getHeight() - 1):
+# TODO: Randomly choose the coordinates of a neighboring pixel
+        old_p = img.getPixel(i, j)    
+        new_i = random.randint(i-1,i+1)
+        new_j = random.randint(j-1,j+1)
+        new_p = img.getPixel(new_i, new_j)
+        # TODO: in the new image, set this pixel's color to the neighbor's color
+        newimg.setPixel(i, j, new_p)
+
+newimg.draw(win)
