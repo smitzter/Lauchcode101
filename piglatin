@@ -1,0 +1,15 @@
+def piglatin(a_str):
+    pig = a_str.split()
+    for i in range(len(pig)):
+        piggy = pig[i]
+        if piggy[0] == ["a", "e", "i", "o", "u"]:
+            pig[i] = piggy + "ay"
+        
+        elif piggy.isalpha() == False:
+            pig[i] = piggy
+        else:
+            pig[i] = ""
+            for pigC in range(len(piggy)): 
+                first = piggy[0]
+                pig[i] = str(piggy[1:]) + str(first) + "ay"
+    return " ".join(pig)  
