@@ -1,0 +1,13 @@
+def numofdigits(n):
+    num = str(n)
+    total = 0
+    for i in range(len(num)):
+        if "." in num:
+            total = total + 1
+            if num[i] == ".":
+                total = 0
+    return total
+
+print(numofdigits(3.14))
+print(numofdigits(9.876543))
+print(numofdigits(9825))
