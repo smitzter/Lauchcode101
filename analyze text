@@ -13,5 +13,7 @@ def analyze_text(x):
     ep2 = str(ep)
     n2 = str(n)
     en2 = str(en)
-    r_str = str("The text contains " + n2 + " alphabetic characters, of which " + en2 + " (" + ep2 + "%) are 'e'.")
-    return r_str
+    return str("The text contains " + n2 + " alphabetic characters, of which " + en2 + " (" + ep2 + "%) are 'e'.")
+    #r_str = str("The text contains " + n2 + " alphabetic characters, of which " + en2 + " (" + ep2 + "%) are 'e'.")
+    #return r_str
+ 
