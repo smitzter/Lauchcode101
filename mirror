@@ -1,0 +1,7 @@
+def reverse(text):
+
+    return(text[::-1])
+        
+def mirror(text):
+
+    return(text + text[::-1])
