@@ -5,3 +5,14 @@ def sum_evens(lst):
             sum = sum + i
     return sum
  
+def sum_of_initial_odds(nums):
+    # your code here
+
+    sum = 0
+    for i in nums:
+        if i%2!=0:
+            sum = sum + i
+        if i%2==0:
+            break
+        
+    return sum
