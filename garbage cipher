@@ -1,3 +1,27 @@
+    def alp_pos(letter):
+    ordlet = ord(letter) 
+    return ordlet
+
+def rot_char(ordlet, rot)
+    n_rot = ordlet + rot
+    return chr(n_rot)
+    
+    def rot_char(letter, rot)
+    n_rot = alp_pos() + rot
+        if n_rot > ord('z'):
+            n_rot -= 26
+    return n_rot
+    
+    def vigenere(ptext, ky)
+    k_length = len(ky)
+    k_int = ord(i) for i in ky
+    ptext_int = ord(i) for i in ptext_int
+    ctext = ''
+    for i in range(len(ptext_int)):
+        val = (ptext_int(i) + k_int(i % k_length)) % 26
+        ctext += chr(val + 65)
+    return ctext
+    
     alphabet = 'abcdefghijklmnopqrstuvwxyz'
     encrypted = ''
     for char in ptext:
