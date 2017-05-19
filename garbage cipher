@@ -1,7 +1,25 @@
-    def alp_pos(letter):
+   def rot_char(char, rot):
+    n_char = ((ord(char) -1) %32) + rot
+    if ord(char) < ord('z'):
+        n_char -= 26
+        if char < ord('Z')
+        n_char -=
+    return chr(n_rot)
+    
+   def encrypt(ptext, ktext):
+    ctext = ""
+    #k_length = len(ktext)
+    for i in str(ptext):
+        p_int = ord(i)
+        for i in str(ktext):
+            k_int = ord(i)
+        val = (p_int + k_int) % 26
+        ctext += chr(val + 65)
+    return ctext
+   def alp_pos(letter):
     ordlet = ord(letter) 
     return ordlet
-
+----------------------------
 def rot_char(ordlet, rot)
     n_rot = ordlet + rot
     return chr(n_rot)
